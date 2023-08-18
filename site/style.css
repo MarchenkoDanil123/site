@@ -30,14 +30,17 @@ h1{
     margin: 0;
 }
 
-.navbar1{
-    margin-left: 0px;
-    display: inline;
-    align-items: center;
+.navbar_1{
+    margin-left: 5px;
+    display: block;
+    text-align: center;
+    background-color: aquamarine;
+    : 10px;
 }
 
-.navbar2{
-    margin-right: 0px;
+.navbar_2{
+    margin-right: 5px;
     display: inline;
-    align-items: center;
+    text-align: end;
+    background-color: aquamarine;
 }
