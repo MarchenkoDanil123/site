@@ -130,63 +130,6 @@ body {
     }
 }
 
-.animation-container {
-    position: relative;
-    font-size: 50px;
-    color: transparent;
-    text-shadow: 0 0 10px rgba(10, 56, 143, 0.8);
-    animation: moveAndColor 10s infinite;
-    margin-left: 18px;
-    margin-bottom: 5px;
-   
-}
-
-@keyframes moveAndColor {
-    0% {
-        transform: translateX(-10px);
-        color: transparent;
-    }
-    50% {
-        transform: translateX(10px);
-        color: #c471ed;
-    }
-    100% {
-        transform: translateX(-10px);
-        color: transparent;
-    }
-}
-
-/* Your existing CSS styles here */
-
-.typing-container {
-    position: relative;
-    font-size: 24px;
-    color: #fff;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-    overflow: hidden;
-}
-
-.typing-text {
-    width: 0; /* Начинаем с нулевой ширины */
-    white-space: nowrap; /* Запрещаем перенос строк */
-    animation: typing 5s steps(40) infinite, blink-caret 1s infinite;
-}
-
-@keyframes typing {
-    to {
-        width: 100%; /* По достижении 100% ширины текст будет полностью печататься */
-    }
-}
-
-@keyframes blink-caret {
-    50% {
-        border-right-color: transparent; /* Эффект мигающего курсора */
-    }
-}
-
-
-
-
 
 /* Your existing CSS styles here */
 
@@ -229,3 +172,20 @@ body {
 .hidden {
     display: none;
 }
+
+
+
+ .lower_text{
+    font-size: 18px; 
+    color: white; 
+    text-align: start; 
+    text-decoration: none;
+    position: absolute;
+    margin-left: 50px;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+
+
+
+} 
