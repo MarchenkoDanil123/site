@@ -17,7 +17,7 @@ dropdowns.forEach(dropdown => {
 document.addEventListener("DOMContentLoaded", function() {
     const centerTexts = document.querySelectorAll(".center-text");
 
-    const messages = ["Let's Discover", "ChatGPT", "Let's Collaborate", "Let's create", "Let's design"];
+    const messages = ["Let's Discover", "ChatGPT", "Let's Collaborate", "Let's Create"];
     let currentMessageIndex = 0;
 
     function changeMessage() {
@@ -34,5 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     changeMessage();
 });
+
 
 // ----------------------------------------------------------------------
