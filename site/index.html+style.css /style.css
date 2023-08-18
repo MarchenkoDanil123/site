@@ -1,7 +1,7 @@
 /* Общие стили */
 body {
     margin: 0;
-    font-family: monospace;
+    font-family: arial;
     background-color: black;
     animation: pulseBackground 15s infinite alternate;
     overflow: hidden;
@@ -52,6 +52,24 @@ body {
 .b1:hover {
 
     color: #12c2e9;
+}
+
+.b1_signup{
+    color: #fff;
+    text-decoration: solid;
+    margin: 0;
+    transition: 0.5s;
+    
+}
+
+.b1_signup:hover{
+    color: black;
+    background-color: aliceblue;
+    text-decoration: underline;
+    margin-right: 15px;
+    transition: 0.2s;
+    border: 2px solid #fff; 
+    padding: 5px 10px; 
 }
 
 /* Стили для выпадающего меню */
@@ -130,7 +148,7 @@ body {
     }
 }
 
-.animation-container {
+/* .animation-container {
     position: relative;
     font-size: 50px;
     color: transparent;
@@ -154,9 +172,23 @@ body {
         transform: translateX(-10px);
         color: transparent;
     }
-}
+} */
 
 /* Your existing CSS styles here */
+
+
+
+@keyframes typing {
+    to {
+        width: 100%; /* По достижении 100% ширины текст будет полностью печататься */
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-right-color: transparent; /* Эффект мигающего курсора */
+    }
+}
 
 .typing-container {
     position: relative;
@@ -171,20 +203,6 @@ body {
     white-space: nowrap; /* Запрещаем перенос строк */
     animation: typing 5s steps(40) infinite, blink-caret 1s infinite;
 }
-
-@keyframes typing {
-    to {
-        width: 100%; /* По достижении 100% ширины текст будет полностью печататься */
-    }
-}
-
-@keyframes blink-caret {
-    50% {
-        border-right-color: transparent; /* Эффект мигающего курсора */
-    }
-}
-
-
 
 
 
@@ -210,4 +228,16 @@ body {
 }
 
 
+.lower_text {
 
+    font-size: 16px; 
+    color: white; 
+    text-align: start; 
+    margin-left: 50px; 
+    text-decoration: none; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 2;
+}
