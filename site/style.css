@@ -1,8 +1,8 @@
 /* Общие стили */
 body {
     margin: 0;
-    background-color: black;
     font-family: monospace;
+    background-color: black;
     animation: pulseBackground 10s infinite alternate;
 }
 
@@ -79,5 +79,25 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Анимация для заднего фона */
+@keyframes pulseBackground {
+    0% {
+        background-color: black;
+    }
+    25%{
+        background-color: rgb(10, 8, 78);
+    }
+    
+    50% {
+        background-color: rgb(8, 90, 8);
+    }
+    75%{
+        background-color: #be12e9;
+    }
+    100% {
+        background-color: black;
+    }
 }
 
