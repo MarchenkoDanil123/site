@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: black;
     font-family: monospace;
+    animation: pulseBackground 10s infinite alternate;
 }
 
 /* Стили для шапки */
